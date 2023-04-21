@@ -19,10 +19,10 @@ We used the PPE detection dataset available on Roboflow for training our model. 
 
 ## Installation : 
 
-- clone the repository : `$ git clone ~
+- clone the repository : `$ git clone https://github.com/Vinayakmane47/PPE_detection_YOLO.git`
 - create a conda environment : `$ conda create -n myyolo python=3.7 -y`
 - Intall requirements : `$ pip install -r requirements.txt`
-- copy the desired file name in Videos folder
+- copy the desired file name in upload folder
 - Run main.py : `python main.py`
 
 
