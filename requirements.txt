@@ -1,7 +1,5 @@
-
-
 cvzone
-ultralytics
+ultralytics==8.0.26
 hydra-core
 matplotlib
 numpy
@@ -16,3 +14,6 @@ tqdm
 filterpy
 scikit-image
 lap
+flask_wtf
+WTForms
+Flask-WTF

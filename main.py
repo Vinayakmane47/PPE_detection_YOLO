@@ -5,14 +5,14 @@ import math
 
 
 
-def ppe_detection(file,webcam=False): 
-    if webcam : 
+def ppe_detection(file): 
+    if file is None : 
         cap = cv2.VideoCapture(0)  # For Webcam
         cap.set(3, 1280)
         cap.set(4, 720)
     else : 
         cap = cv2.VideoCapture(file)  # For Video
-    model = YOLO("ppe.pt")
+    model = YOLO("best.pt")
 
     classNames = ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone',
                 'Safety Vest', 'machinery', 'vehicle']
@@ -54,6 +54,7 @@ def ppe_detection(file,webcam=False):
 
 
 if __name__ == "__main__":
-    file = r"F:\Computer_vision\PPE_detection_YOLO\Videos\ppe-1.mp4"
-    ppe_detection(file,webcam=True)
+    #file = r"F:\Computer_vision\PPE_detection_YOLO\Videos\ppe-1.mp4"
+    file = r"F:\Computer_vision\PPE_detection_YOLO\Videos\ppe-2.mp4"
+    ppe_detection(file)
 
